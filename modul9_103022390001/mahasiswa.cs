@@ -1,13 +1,26 @@
+using System.Numerics;
+using System.Runtime.CompilerServices;
+
 namespace modul9_103022390001
 {
-    public class WeatherForecast
+
+    public class Mahasiswa
     {
-        public DateOnly Date { get; set; }
+        public String Nama { get; set; }
+        public String NIM { get; set; }
+        public int Year { get; set; }
+        public List<String> Course { get; set; }
 
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-        public string? Summary { get; set; }
+        public Mahasiswa(String Nama, String NIM, int year, List<String> Course)
+        {
+            this.Nama = Nama;
+            this.NIM = NIM;
+            this.Year = year;
+            this.Course = Course;
+        }
     }
-}
+
+
+   
+}   
+
